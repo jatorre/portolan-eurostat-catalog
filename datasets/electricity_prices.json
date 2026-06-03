@@ -1,0 +1,32 @@
+{
+  "id": "electricity_prices",
+  "title": "Industrial electricity price",
+  "description": "Eurostat industrial electricity prices by country, including taxes and levies, in EUR per kWh. One row per country (ISO geo code + name) and reporting semester (e.g. 2025-S2), with the EU-27 aggregate included for benchmarking. Useful for comparing Finland's energy cost against EU peers. Non-geospatial table — country-level, no geometry.",
+  "keywords": [
+    "electricity price",
+    "energy cost",
+    "industrial energy",
+    "non-spatial",
+    "eurostat",
+    "european"
+  ],
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "license": "Eurostat — free reuse with attribution",
+  "provider": "Eurostat (EU statistical office)",
+  "semantics": {
+    "spec": "Open Semantic Interchange",
+    "label": "Industrial electricity price",
+    "describes": "Eurostat industrial electricity price by country, including taxes and levies, by reporting semester.",
+    "answers": "What is the industrial electricity price (energy cost) in a given country, and how does it compare across the EU?",
+    "unit": "EUR / kWh"
+  },
+  "representation": "iceberg",
+  "tables": [
+    "tab.eurostat_elec"
+  ]
+}

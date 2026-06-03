@@ -1,0 +1,93 @@
+{
+  "id": "electricity_prices",
+  "type": "Feature",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core"
+  ],
+  "time": null,
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "type": "dataset",
+    "title": "Industrial electricity price",
+    "description": "Eurostat industrial electricity prices by country, including taxes and levies, in EUR per kWh. One row per country (ISO geo code + name) and reporting semester (e.g. 2025-S2), with the EU-27 aggregate included for benchmarking. Useful for comparing Finland's energy cost against EU peers. Non-geospatial table — country-level, no geometry.",
+    "keywords": [
+      "electricity price",
+      "energy cost",
+      "industrial energy",
+      "non-spatial",
+      "eurostat",
+      "european"
+    ],
+    "contacts": [
+      {
+        "name": "Eurostat (EU statistical office)",
+        "roles": [
+          "provider"
+        ]
+      }
+    ],
+    "license": "Eurostat — free reuse with attribution",
+    "themes": [
+      {
+        "scheme": "https://opensemanticinterchange.org",
+        "concepts": [
+          {
+            "id": "What is the industrial electricity price (energy cost) in a given country, and how does it compare across the EU?"
+          }
+        ]
+      }
+    ],
+    "portolan:iceberg_endpoint": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog",
+    "portolan:iceberg_table": "tab.eurostat_elec"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/records/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/records/electricity_prices.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/data/tab/eurostat_elec/metadata/v1.metadata.json",
+      "type": "application/vnd.apache.iceberg+json",
+      "title": "Apache Iceberg table tab.eurostat_elec — iceberg_scan() or ATTACH the catalog endpoint"
+    }
+  ]
+}

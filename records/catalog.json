@@ -1,0 +1,29 @@
+{
+  "id": "eurostat",
+  "type": "Catalog",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core"
+  ],
+  "title": "🇪🇺 Eurostat (OGC API - Records catalogue)",
+  "description": "OGC API - Records view of this Portolan catalogue (same GeoJSON model as the STAC view).",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/records/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/catalog.json",
+      "type": "application/json",
+      "title": "Same catalogue as a STAC Catalog"
+    },
+    {
+      "rel": "items",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/records/electricity_prices.json",
+      "type": "application/geo+json",
+      "title": "Industrial electricity price"
+    }
+  ]
+}

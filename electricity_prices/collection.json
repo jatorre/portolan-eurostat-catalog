@@ -1,0 +1,94 @@
+{
+  "type": "Collection",
+  "id": "electricity_prices",
+  "stac_version": "1.1.0",
+  "description": "Eurostat industrial electricity price by country (incl. taxes).",
+  "title": "Industrial electricity price",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Eurostat"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Eurostat"
+    },
+    {
+      "rel": "via",
+      "href": "https://ec.europa.eu/eurostat",
+      "type": "text/html",
+      "title": "Eurostat (source)"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://portolan-sdi.github.io/stac-iceberg-extension/v1.0.0/schema.json"
+  ],
+  "portolan:geospatial": false,
+  "table:row_count": 7,
+  "table:columns": [
+    {
+      "name": "geo",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "type": "string"
+    },
+    {
+      "name": "period",
+      "type": "string"
+    },
+    {
+      "name": "price_eur_per_kwh",
+      "type": "double"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "assets": {
+    "electricity_prices": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/electricity_prices/electricity_prices.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "iceberg": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/data/tab/eurostat_elec",
+      "type": "application/x-iceberg",
+      "roles": [
+        "data"
+      ],
+      "title": "Apache Iceberg table tab.eurostat_elec — iceberg_scan() or ATTACH the catalog_uri"
+    }
+  },
+  "iceberg:catalog_type": "rest",
+  "iceberg:catalog_uri": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog",
+  "iceberg:table_id": "tab.eurostat_elec",
+  "iceberg:current_snapshot_id": 1780392389814,
+  "git:edit_url": "https://github.com/jatorre/portolan-eurostat-catalog/edit/main/electricity_prices/collection.json"
+}

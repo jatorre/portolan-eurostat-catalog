@@ -1,61 +1,44 @@
 {
   "type": "Catalog",
-  "stac_version": "1.0.0",
-  "id": "eurostat",
-  "title": "🇪🇺 Eurostat (Portolan catalog)",
-  "description": "A Portolan catalog: git-sourced STAC + Apache Iceberg metadata, published to object storage as a static Iceberg REST catalog (ATTACH) + STAC + OGC API - Records + direct download. Data from Eurostat (EU statistical office).",
-  "portolan:catalog_type": "iceberg-rest-static",
-  "portolan:iceberg_endpoint": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog",
-  "portolan:datasets": 1,
-  "portolan:contributions": {
-    "via": "github",
-    "repo": "https://github.com/jatorre/portolan-eurostat-catalog",
-    "issues_url": "https://github.com/jatorre/portolan-eurostat-catalog/issues",
-    "accepts": [
-      "issue",
-      "pull_request"
-    ]
-  },
+  "id": "mig-eurostat",
+  "stac_version": "1.1.0",
+  "description": "Official European statistics published as a git-backed Portolan catalog.",
   "links": [
     {
       "rel": "root",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/records/catalog.json",
+      "href": "./catalog.json",
       "type": "application/json",
-      "title": "Same catalogue as OGC API - Records"
+      "title": "Eurostat"
     },
     {
-      "rel": "feedback",
+      "rel": "child",
+      "href": "./electricity_prices/collection.json"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/jatorre/portolan-eurostat-catalog",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
       "href": "https://github.com/jatorre/portolan-eurostat-catalog/issues",
       "type": "text/html",
-      "title": "Report issues or contribute data"
+      "title": "Report issues / request data"
     },
     {
-      "rel": "item",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-eurostat-catalog/items/electricity_prices.json",
-      "type": "application/geo+json",
-      "title": "Industrial electricity price"
+      "rel": "monitor",
+      "href": "https://github.com/jatorre/portolan-eurostat-catalog/commits/main.atom",
+      "type": "application/atom+xml",
+      "title": "Change feed"
     }
   ],
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180,
-          -90,
-          180,
-          90
-        ]
-      ]
-    }
-  }
+  "title": "Eurostat",
+  "stac_extensions": [
+    "https://portolan-sdi.github.io/git-backed-catalog/v1.0.0/schema.json"
+  ],
+  "git:repository": "https://github.com/jatorre/portolan-eurostat-catalog",
+  "git:ref": "main",
+  "git:provider": "github",
+  "git:sovereign": false
 }

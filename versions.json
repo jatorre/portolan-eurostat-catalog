@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "mig-eurostat",
+  "created": "2026-06-04T08:27:04.068965+00:00",
+  "collections": {
+    "electricity_prices": {
+      "current_version": "1.0.0",
+      "updated": "2026-06-04T08:27:13.774213+00:00",
+      "asset_count": 1,
+      "total_size_bytes": 932
+    }
+  },
+  "updated": "2026-06-04T08:27:13.774213+00:00"
+}

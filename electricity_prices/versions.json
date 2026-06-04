@@ -1,0 +1,22 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-06-04T08:27:13.774213Z",
+      "breaking": false,
+      "assets": {
+        "electricity_prices.parquet": {
+          "sha256": "104a5ee8813a376fe4db10ed62919293bcd38cdfef0dd584773ae605fa4c5622",
+          "size_bytes": 932,
+          "href": "electricity_prices/electricity_prices.parquet",
+          "mtime": 1780561608.0
+        }
+      },
+      "changes": [
+        "electricity_prices.parquet"
+      ]
+    }
+  ]
+}
